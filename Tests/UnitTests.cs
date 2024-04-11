@@ -7,7 +7,7 @@ namespace GithubActionsLab
     public class Math
     {
         [Test]
-        public void Add_Valid()
+        public void Add_ValidKroeger()
         {
             Assert.AreEqual(3, Program.Add("1", "2"));
             Assert.AreEqual(5, Program.Add("3", "2"));
@@ -15,7 +15,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Add_Invalid()
+        public void Add_InvalidKroeger()
         {
             Assert.Throws<FormatException>(() => Program.Add("1", "a"));
             Assert.Throws<FormatException>(() => Program.Add("a", "1"));
@@ -23,7 +23,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Add_Null()
+        public void Add_NullKroeger()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Add("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Add(null, "1"));
@@ -33,7 +33,7 @@ namespace GithubActionsLab
         // Implement 3 tests per operation, following a similar pattern as above
 
         [Test]
-        public void Subtract_Valid()
+        public void Subtract_ValidKroeger()
         {
             Assert.AreEqual(3, Program.Subtract("5", "2"));
             Assert.AreEqual(1, Program.Subtract("3", "2"));
@@ -41,7 +41,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Invalid()
+        public void Subtract_InvalidKroeger()
         {
             Assert.Throws<FormatException>(() => Program.Subtract("1", "a"));
             Assert.Throws<FormatException>(() => Program.Subtract("a", "1"));
@@ -49,7 +49,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Null()
+        public void Subtract_NullKroeger()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Subtract("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Subtract(null, "1"));
@@ -57,7 +57,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Valid()
+        public void Multiply_ValidKroeger()
         {
             Assert.AreEqual(10, Program.Multiply("5", "2"));
             Assert.AreEqual(-6, Program.Multiply("3", "-2"));
@@ -65,7 +65,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Invalid()
+        public void Multiply_InvalidKroeger()
         {
             Assert.Throws<FormatException>(() => Program.Multiply("1", "a"));
             Assert.Throws<FormatException>(() => Program.Multiply("a", "1"));
@@ -73,7 +73,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Null()
+        public void Multiply_NullKroeger()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Multiply("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, "1"));
@@ -81,7 +81,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_Valid()
+        public void Divide_ValidKroeger()
         {
             Assert.AreEqual(1, Program.Divide("6", "6"));
             Assert.AreEqual(-1.5, Program.Divide("3", "-2"));
@@ -89,7 +89,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_Invalid()
+        public void Divide_InvalidKroeger()
         {
             Assert.Throws<FormatException>(() => Program.Divide("1", "a"));
             Assert.Throws<FormatException>(() => Program.Divide("a", "1"));
@@ -97,7 +97,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_Null()
+        public void Divide_NullKroeger()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Divide("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Divide(null, "1"));
@@ -105,7 +105,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Valid()
+        public void Power_ValidKroeger()
         {
             Assert.AreEqual(36, Program.Power("6", "2"));
             Assert.AreEqual(1, Program.Power("1", "5"));
@@ -113,7 +113,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Invalid()
+        public void Power_InvalidKroeger()
         {
             Assert.Throws<FormatException>(() => Program.Power("1", "a"));
             Assert.Throws<FormatException>(() => Program.Power("a", "1"));
@@ -121,7 +121,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Null()
+        public void Power_NullKroeger()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Power("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, "1"));
